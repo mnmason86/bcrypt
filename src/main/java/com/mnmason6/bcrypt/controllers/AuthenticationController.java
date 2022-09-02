@@ -32,7 +32,7 @@ public class AuthenticationController {
                 userFromDb.getPassword()))){
             return new RedirectView("/login");
         }
-        return new RedirectView("/");
+        return new RedirectView("/" + username);
 
 //        if (userFromDb.getPassword().equals(password)){
 //            return new RedirectView("/");
